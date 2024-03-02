@@ -20,22 +20,15 @@ const secondaCard = {
 };
 
 function App() {
+  // const numeri = [1,2,3,4,5,6,7,8,9];
+ // console.log(Math.min(...numeri));
   return (
     <div className="App">
         <h2>Card Dinamiche</h2>
         <section className="card-section">
-        <Product 
-        nome={primaCard.nome} 
-        prezzo={primaCard.prezzo} 
-        img={primaCard.img}
-        costoFinale={primaCard.costoFinale}
-        />
-        <Product 
-        nome={secondaCard.nome} 
-        prezzo={secondaCard.prezzo} 
-        img={secondaCard.img}
-        costoFinale={secondaCard.costoFinale}
-        />
+         {/* spread operator */}
+        <Product {...primaCard} />
+        <Product {...secondaCard} />
         </section>
          {/*<Componente1/>*/}
         {/*<Componente2/>*/}
