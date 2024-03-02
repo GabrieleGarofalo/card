@@ -1,0 +1,111 @@
+:root {
+  --color-primary: #006340ce;
+  --color-secondary: #1d5b91;
+  --color-third: #00cff48f; 
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (min-width: 992px) {
+
+  .card-section{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+}
+
+article{
+  background-color: var(--color-primary);
+  position:relative;
+  border-radius: 1rem;
+  box-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 0.4rem;
+  place-items: center;
+  width: 220px;
+  padding: 20px;
+  margin: 0 5px; /* Margine tra le card */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  
+}
+
+
+article::after{
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+  position: absolute;
+  top: 30px;
+  left: 170px;
+  padding: 0.1rem;
+  content: "@";
+  border-radius: 50%;
+  font-weight:700;
+}
+
+
+
+.card img{
+  border-radius: 1rem;
+  width: 70%;
+}
+.card p{
+  color: var(--color-third);
+  margin-top: 0;
+}
+.card h6{
+  color: var(--color-third);
+  margin-top: 0;
+}
+.card hr{
+  color: var(--color-third);
+  margin-top: 0;
+  height: 2px;
+  width: 100%;
+}
+
+
+article .card-time{
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-third);
+  color: var(--color-dark);
+  margin-top: 0px;
+}
+
+article button{
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-third);
+  background-color: var(--color-dark);
+  color: var(--color-third);
+  font-weight: 700;
+  transition: all 125ms ease; 
+  margin-bottom: 2px;
+}
+
+article button:hover {
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-third);
+  color: var(--color-dark);
+  cursor: pointer;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+
+}
