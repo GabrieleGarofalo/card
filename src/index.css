@@ -13,9 +13,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -78,11 +80,12 @@ article::after{
 
 
 article .card-time{
-  width: 100%;
+  width: 90%;
   text-align: center;
   background-color: var(--color-third);
   color: var(--color-dark);
   margin-top: 0px;
+  border-radius: 5px;
 }
 
 article button{
