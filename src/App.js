@@ -27,7 +27,11 @@ function App() {
         <h2>Card Dinamiche</h2>
         <section className="card-section">
          {/* spread operator */}
-        <Product {...primaCard} />
+        <Product {...primaCard} >
+          <p>
+            Lorem ipsum dolor
+          </p>
+        </Product>
         <Product {...secondaCard} />
         </section>
          {/*<Componente1/>*/}

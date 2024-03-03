@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Product = ({img,costoFinale,nome,prezzo}) => {
+const Product = ({img,costoFinale,nome,prezzo,children}) => {
   // const{costoFinale, nome, prezzo, img} = props
 
   return (
@@ -12,6 +12,7 @@ const Product = ({img,costoFinale,nome,prezzo}) => {
     <hr/>
     <p>{prezzo}</p>
     <p>bamby000</p>
+    <p>{children}</p>
     </div>
     <p className='card-time'>RIAPRE PRESTO</p>
     <button>{costoFinale}</button>
